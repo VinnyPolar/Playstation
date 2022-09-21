@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* Carrega fonte a ser usada */
+@font-face {
+    font-family: Familjen Grotesk;
+    src: url(fonts/ttf/FamiljenGroteskGF-Regular.ttf);
+}
+
+
+/* Configurações Gerais */
+body {
+    font-family: Familjen Grotesk;
+    color: #333333;
+}
+
+/* Zera bordas, margin e padding dos elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Links */
+a {
+	color: #333333;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover,
+a:focus,
+a:active {
+	color: #777777;
+    outline: 0;
+}
+
+a:visited#linkmenu{
+    color: #000000;
+}
+
+
+/* Grid */
+.grid {
+	display: grid;
+}
+
+
+
+/* Logo Playstatiion */
+.logo_playstation {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Menu Principal */
+ul.main-menu-navigation {
+    list-style-type: none;
+    font-size: 1.25em;
+    font-weight: 600
+}
+.main-menu-navigation {
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+
+/* Primeira dobra */
+.top-image, .middle-image {
+    position: relative;
+}
+.top-text {
+    position: absolute;	
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(20%, -50%);
+    font-family: 'Sansation';
+    font-size: 43px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+/* Transição */
+
+.transition{
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: black;
+}
+
+h1{
+    color: #FFFFFF;
+    margin-left: 15px;
+    padding: 20px;
+}
+
+.lançamento{
+    color: #FFFFFF;
+    margin-left: 34px;  
+}
+
+#games{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    gap: 15rem;
+    list-style-type: none;
+}
+
+.layout-games{
+    box-sizing: border-box;
+    margin-top: 45px;
+}
+
+/* Segunda dobra */
+.middle-text {
+    position: absolute;	
+    top: 5%;
+    left: 5%;
+    line-height: 48px;
+    width: 800px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.middle-text p:nth-child(1) {
+    font-size: 48px;
+    margin-top: 0.825em;			
+}
+.middle-text p:nth-child(2) {
+    font-size: 60px;
+    margin-bottom: 1.25em;
+}
+.middle-text p:nth-child(3) {
+    font-size: 36px;
+    margin-bottom: 1.25em;
+}
+.middle-text p:nth-child(4) {
+    font-size: 42px;
+    margin-bottom: 0;
+}
+.middle-text p:nth-child(5) {
+    font-size: 28px;
+    margin-bottom: 1.25em;
+}
+.middle-text ul {
+    padding-left: 3%;
+    font-size: 28px
+}
+
+
+/* Redes Sociais */
+.redes-sociais {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 60px 0;
+}
+.redes-sociais-container p {
+    text-align: center;
+    font-size: 72px;
+    padding-top:15px;
+    padding-bottom: 30px;
+}
+.redes-sociais img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Rodapé */
+.rodape-body {
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #00439c;
+    margin-top: 5px;
+}
+.rodape-body-item ul {
+    color: #fff;
+    list-style-type: none;
+    font-size: 18px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
